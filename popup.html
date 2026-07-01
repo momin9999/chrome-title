@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>タイトル & description</title>
+  </head>
+  <body>
+    <header class="site">
+      <img id="favicon" class="favicon" alt="" />
+      <div class="site-meta">
+        <div id="site-title" class="site-title">読み込み中…</div>
+        <div id="site-url" class="site-url"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="field">
+        <div class="field-head">
+          <span class="field-label">タイトル</span>
+          <button id="copy-title" class="copy-btn" type="button" disabled>
+            コピー
+          </button>
+        </div>
+        <div id="title-value" class="value" tabindex="0"></div>
+      </section>
+
+      <section class="field">
+        <div class="field-head">
+          <span class="field-label">description</span>
+          <button id="copy-desc" class="copy-btn" type="button" disabled>
+            コピー
+          </button>
+        </div>
+        <div id="desc-value" class="value" tabindex="0"></div>
+      </section>
+
+      <p id="note" class="note" hidden></p>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

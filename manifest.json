@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "タイトル & description コピー",
+  "version": "1.0.0",
+  "description": "右クリックメニューやツールバーから、ページ（またはリンク先）のタイトルと description を取得してクリップボードにコピーします。",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "contextMenus",
+    "scripting",
+    "offscreen",
+    "clipboardWrite",
+    "notifications",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "タイトル & description を表示",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
